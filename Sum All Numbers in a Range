@@ -1,0 +1,20 @@
+function sumAll(arr) {
+  var max = Math.max.apply(null,arr);
+  //finds the max number
+  var min = Math.min.apply(null,arr);
+  //finds the mn number
+  var range = max-min; 
+  //defines the range in the for loop
+  var total = 0;
+  //total num to be added
+  
+  for(var i=1; i<range; i++) {
+    total = total + min + i;
+  }
+  total = total + max + min;
+  //adding max and min, then returning
+  
+  return total;
+}
+
+sumAll([5, 10]);
