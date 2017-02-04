@@ -1,0 +1,19 @@
+
+function pairElement(str) {
+  var obj = {
+    T: "A",
+    A: "T",
+    C: "G",
+    G: "C"
+  };
+  
+  strArr = str.split('');
+  
+  for(var i = 0; i < strArr.length; i++){
+   strArr[i] = [strArr[i], obj[strArr[i]]];
+    
+  }
+  return strArr;
+}
+
+pairElement("CTCTA");
