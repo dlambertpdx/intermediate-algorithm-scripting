@@ -31,3 +31,5 @@ Sum All Odd Fibonacci Numbers
 Sum All Primes	
 
 Least Commom Multiple
+
+Drop It
