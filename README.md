@@ -27,3 +27,7 @@ Convert HTML Entities
 Spinal Tap Case
 
 Sum All Odd Fibonacci Numbers
+
+Sum All Primes	
+
+Least Commom Multiple
