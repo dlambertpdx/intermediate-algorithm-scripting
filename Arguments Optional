@@ -1,0 +1,30 @@
+
+function addTogether() {
+  var arg = new Array(arguments.length);
+    for(var i = 0; i < arg.length; i++){
+    arg[i] = arguments[i];
+    }
+  if(arg.length == 2){
+    if(typeof arg[0] !== 'number' || typeof arg[1] !== 'number'){
+      return undefined;
+    }
+    return arg[0] + arg[1];
+  } 
+  if(arg.length == 1){
+    a = arg[0];
+    if(typeof a !== 'number'){
+      return undefined;
+    }
+    else {
+      return function(b){
+        if(typeof b !== 'number'){
+          return undefined;
+        }
+        else
+          return a+b;
+      };
+    }
+  }
+}
+
+addTogether(2,3);
